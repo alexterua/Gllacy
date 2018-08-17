@@ -34,6 +34,54 @@
         <h2>Сливочное мороженое</h2>
 
         <!-- Здесь будет форма с фильтрами -->
+        <section class="filters">
+            <h2 class="visually-hidden">Сортировка</h2>
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Сортировка:</legend>
+                    <select name="sort" id="sort">
+                        <option value="popular" selected>по популярности</option>
+                        <option value="cheap">сначала недорогие</option>
+                        <option value="expensive">сначала дорогие</option>
+                        <option value="for-fat-content">по жирности</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Цена: 
+                        <output name="min-price">100</output>
+                        <label for="min-price"> руб. - </label>
+                        <output name="max-price">500</output>
+                        <label for="max-price"> руб.</label>
+                    </legend>
+                    <input type="range" name="range" id="range">
+                </fieldset>
+                <fieldset>
+                    <legend>Жирность:</legend>
+                    <input type="radio" name="fat-content" id="fat-content-0">
+                    <label for="fat-content-0">0%</label>
+                    <input type="radio" name="fat-content" id="fat-content-10">
+                    <label for="fat-content-10">до 10%</label>
+                    <input type="radio" name="fat-content" id="fat-content-30">
+                    <label for="fat-content-30">до 30%</label>
+                    <input type="radio" name="fat-content" id="fat-content-more-30">
+                    <label for="fat-content-more-30">выше 30%</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Наполнители:</legend>
+                    <input type="checkbox" name="chocolate" id="chocolate" checked>
+                    <label for="chocolate">шоколадные</label>
+                    <input type="checkbox" name="sugar-powders" id="sugar-powders" checked>
+                    <label for="sugar-powders">сахарные присыпки</label>
+                    <input type="checkbox" name="fruit" id="fruit">
+                    <label for="fruit">фрукты</label>
+                    <input type="checkbox" name="syrups" id="syrups">
+                    <label for="syrups">сиропы</label>
+                    <input type="checkbox" name="jams" id="jams">
+                    <label for="jams">джемы</label>
+                </fieldset>
+                <button class="button filters-button" type="submit">Применить</button>
+            </form>
+        </section>
 
         <ul class="goods">
             <li class="goods-item">
@@ -251,7 +299,7 @@
     <!-- Окно поиска -->
     <section class="modal-search">
         <h2 class="visually-hidden">Поиск</h2>
-        <input type="text" name="search" placeholder="Что ищем?">
+        <input type="search" name="search" placeholder="Что ищем?">
     </section>
     <!-- Окно входа пользователя-->
     <section class="modal-login">
