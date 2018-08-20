@@ -9,31 +9,37 @@
 </head>
 <body>
     <header class="header">
-        <nav class="header-navigation">
-            <a class="header-logo">
-                <img src="img/logo/logo.svg" alt="Логотип GllacyShop" width="154" height="64">
-            </a>
-            <ul class="site-navigation">
-                <li class="site-navigation-item site-navigation-active"><a href="#">Каталог</a></li>
-                <li class="site-navigation-item"><a href="#">Доставка и оплата</a></li>
-                <li class="site-navigation-item"><a href="#">О компании</a></li>
-            </ul>
-        </nav>
-        <button class="search" type="submit">Найти</button>
-        <ul class="user-navigation">
-            <li class="login"><a class="login-link" href="#">Вход</a></li>
-        </ul>
-        <a href="#" class="cart cart-with-goods">2 товара</a>
-        <p class="work-time">С 10 до 20, ежедневно</p>
-        <p class="tel">8 812 450-25-25</p>        
+        <div class="container">
+            <div class="header-top">
+                <nav class="header-navigation">
+                    <a class="header-logo">
+                        <img src="img/logo/logo.svg" alt="Логотип GllacyShop" width="154" height="64">
+                    </a>
+                    <ul class="site-navigation">
+                        <li class="site-navigation-item site-navigation-active"><a href="#">Каталог</a></li>
+                        <li class="site-navigation-item"><a href="#">Доставка и оплата</a></li>
+                        <li class="site-navigation-item"><a href="#">О компании</a></li>
+                    </ul>
+                </nav>
+                <button class="search" type="submit">Найти</button>
+                <ul class="user-navigation">
+                    <li class="login"><a class="login-link" href="#">Вход</a></li>
+                </ul>
+                <a href="#" class="cart cart-with-goods">2 товара</a>
+            </div>
+            <div class="header-bottom">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs-item"><a href="#">Главная</a></li>
+                    <li class="breadcrumbs-item"><a href="#">Каталог</a></li>
+                    <li class="breadcrumbs-item breadcrumbs-item-active">Сливочное</li>
+                </ul>
+                <p class="work-time">С 10 до 20, ежедневно</p>
+                <p class="tel">8 812 450-25-25</p>
+            </div>
+        </div>        
     </header>
-    <main class="container">
+    <main class="catalog">
         <h1 class="visually-hidden">Каталог GllacyShop</h1>
-        <ul class="breadcrumbs">
-            <li class="breadcrumbs-item"><a href="#">Главная</a></li>
-            <li class="breadcrumbs-item"><a href="#">Каталог</a></li>
-            <li class="breadcrumbs-item breadcrumbs-item-active">Сливочное</li>
-        </ul>
         <h2>Сливочное мороженое</h2>
         <section class="filters">
             <h2 class="visually-hidden">Сортировка</h2>
@@ -253,25 +259,27 @@
         </ul>
     </main>
     <footer class="footer">
-        <div class="footer-social">
-            <ul class="socials">
-                <li class="social"><a href="twitter.com" class="social-link link-twitter" aria-label="Твиттер"></a></li>
-                <li class="social"><a href="instagram.com" class="social-link link-instagram" aria-label="Инстаграм"></a></li>
-                <li class="social"><a href="facebook.com" class="social-link link-facebook" aria-label="Фейсбук"></a></li>
-                <li class="social"><a href="vk.com" class="social-link link-vkontakte" aria-label="Вконтакте"></a></li>
-            </ul>
-        </div>
-        <div class="footer-navigation">
-            <ul class="links">
-                <li class="links-item"><a href="#"><b>Для поставщиков</b></a></li>
-                <li class="links-item"><a href="#">О производстве</a></li>
-                <li class="links-item"><a href="#">Наши документы</a></li>
-                <li class="links-item"><a href="#">Экологические стандарты</a></li>
-            </ul>
-        </div>
-        <div class="footer-copyright">
-            <a href="htmlacademy.ru"><img src="img/decor/logo-htmlacademy-small.svg" alt="HTML Академия" width="108" height="39"></a>
-            <p class="copyright">Сделано в HTML Academy &copy; 2017</p>
+        <div class="container">
+            <div class="footer-social">
+                <ul class="socials">
+                    <li class="social"><a href="twitter.com" class="social-link link-twitter" aria-label="Твиттер"></a></li>
+                    <li class="social"><a href="instagram.com" class="social-link link-instagram" aria-label="Инстаграм"></a></li>
+                    <li class="social"><a href="facebook.com" class="social-link link-facebook" aria-label="Фейсбук"></a></li>
+                    <li class="social"><a href="vk.com" class="social-link link-vkontakte" aria-label="Вконтакте"></a></li>
+                </ul>
+            </div>
+            <div class="footer-navigation">
+                <ul class="links">
+                    <li class="links-item"><a href="#"><b>Для поставщиков</b></a></li>
+                    <li class="links-item"><a href="#">О производстве</a></li>
+                    <li class="links-item"><a href="#">Наши документы</a></li>
+                    <li class="links-item"><a href="#">Экологические стандарты</a></li>
+                </ul>
+            </div>
+            <div class="footer-copyright">
+                <a href="htmlacademy.ru"><img src="img/decor/logo-htmlacademy-small.svg" alt="HTML Академия" width="108" height="39"></a>
+                <p class="copyright">Сделано в HTML Academy &copy; 2017</p>
+            </div>
         </div>
     </footer>
 
